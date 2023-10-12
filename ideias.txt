@@ -1,0 +1,27 @@
+- Meta / projeção de tráfego com base nas %
+
+
+
+
+
+
+________________________________________
+
+.value input
+
+for
+
+consumo de api
+
+Software SEO
+
+Inserir js no HTML 
+
+Debug console com pause
+
+POST https://www.googleapis.com/webmasters/v3/sites/https://makevendas.com.br/searchAnalytics/query
+{
+  "startDate": "2015-04-01",
+  "endDate": "2018-05-01",
+  "dimensions": ["country","device"]
+}
