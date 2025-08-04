@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoramento - SEO Tools</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="../home/index.html" class="logo">SEO Tools</a>
+                <ul class="nav-list">
+                    <li><a href="../scanner/index.html">Scanner</a></li>
+                    <li><a href="../contador-palavras/index.html">Contador</a></li>
+                    <li><a href="../monitoramento/index.html">Monitoramento</a></li>
+                    <li><a href="../home/index.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="page-title">Monitoramento SEO</h1>
+    </header>
+    <main class="container">
+      <h2 class="section-title">Cadastrar dados de análise</h2>
+      <div class="form-container box_cadastro">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="volume">Tráfego volume</label>
+            <input id="volume" class="volume" placeholder="Tráfego volume">
+          </div>
+          <div class="form-group">
+            <label for="sd">SEO Difficult</label>
+            <input id="sd" class="sd" placeholder="SEO Difficult">
+          </div>
+          <div class="form-group">
+            <label for="ca">Colocação</label>
+            <input id="ca" class="ca" placeholder="Colocação">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="data">Data</label>
+            <input id="data" class="data" type="date" placeholder="data">
+          </div>
+          <div class="form-group">
+            <label for="acessos">Acessos</label>
+            <input id="acessos" class="acessos" placeholder="acessos">
+          </div>
+        </div>
+        <button onclick="chamar()" class="btn cadastrar">Cadastrar</button>
+      </div>
+      
+      <div class="resultado-container">
+        <h3 class="section-subtitle">Dados Cadastrados</h3>
+        <ul class="resultado-list">
+          <li><span class="pName">Volume = </span><span class="pResu pResult"> x</span></li>
+          <li><span class="pName">SD = </span><span class="pResu pResult1"></span></li>
+          <li><span class="pName">CA = </span><span class="pResu pResult2"></span></li>
+          <li><span class="pName">Data = </span><span class="pResu pResult3"></span></li>
+          <li><span class="pName">Acessos = </span><span class="pResu pResult4"></span></li>
+        </ul>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2023 SEO Tools - Todos os direitos reservados</p>
+      </div>
+    </footer>
+ </body>
+ </html>

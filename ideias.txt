@@ -25,3 +25,6 @@ POST https://www.googleapis.com/webmasters/v3/sites/https://makevendas.com.br/se
   "endDate": "2018-05-01",
   "dimensions": ["country","device"]
 }
+
+
+https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=pt-br

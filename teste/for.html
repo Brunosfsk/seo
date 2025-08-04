@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   
+</head>
+<body>
+    
+    <div id="perfilList"> 
+
+       
+       
+    </div>
+
+</body>
+
+<script>
+
+    let perfis = [
+        {
+            nome:"Virmerson", 
+            avatar:"https://gravatar.com/avatar/4290c37c244a6fc380e219c734bf0300?s=400&d=robohash&r=x",
+            pais:"Portugal",
+            estado:"Setúbal"
+        },
+        {
+            nome:"Bruno", 
+            avatar:"https://gravatar.com/avatar/66d4daf7ef73beab69a585534efc8b51?s=400&d=robohash&r=x",
+            pais:"Brasil",
+            estado:"São Paulo"
+        },
+
+    ]
+
+    function listar(){
+
+        let saida = ""
+        for (i=0; i< perfis.length; i++){
+           saida = saida+  renderizarPerfil(i)
+        }
+        document.getElementById("perfilList").innerHTML =  saida
+
+    }
+
+
+    function renderizarPerfil(indice){
+       let perfil =  perfis[indice]
+        //template string
+        return `<div>
+            <img width="100" src="${perfil.avatar}">
+            <label> ${perfil.nome} </label>
+            <button onclick="verDetalhes(${indice})">Detalhes</button>
+        </div>`
+    }
+
+    function verDetalhes(indice){
+            let perfilDetalhado = perfis[indice]
+            alert(JSON.stringify(perfilDetalhado));
+    }
+
+    listar()
+
+</script>
+</html>

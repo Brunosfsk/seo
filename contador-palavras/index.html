@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Palavras - SEO Tools</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="container">
+                <a href="../home/index.html" class="logo">SEO Tools</a>
+                <ul class="nav-list">
+                    <li><a href="../scanner/index.html">Scanner</a></li>
+                    <li><a href="../contador-palavras/index.html">Contador</a></li>
+                    <li><a href="../monitoramento/index.html">Monitoramento</a></li>
+                    <li><a href="../home/index.html">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="page-title">Contador de Palavras-Chave</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box_cadastro">
+          <div class="form-group">
+            <label for="palavra_chave">Palavra-chave:</label>
+            <input class="palavra_chave" type="text" placeholder="Digite aqui sua palavra-chave..." id="palavra_chave">
+          </div>
+          <div class="form-group">
+            <label for="meta-description">Texto para análise:</label>
+            <textarea class="meta-description" placeholder="Digite aqui seu texto..." id="meta-description"></textarea>
+          </div>
+          <div class="stats">
+            <h3 class="counter">Contador: 0</h3>
+            <h3 class="words">0 palavras-chave encontradas</h3>
+          </div>
+          <div class="form-group">
+            <button onclick="chamar()" class="btn cadastrar">Analisar Texto</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2023 SEO Tools - Desenvolvido para fins educacionais</p>
+      </div>
+    </footer>
+  </body>
+</html>
