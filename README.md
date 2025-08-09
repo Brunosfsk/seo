@@ -1,6 +1,7 @@
 # Plataforma de Ferramentas SEO
 
 Uma plataforma com ferramentas para auxiliar na otimização de sites para mecanismos de busca (SEO).
+![Projeto SEO](img/Home.jpg)
 
 ## Descrição
 
